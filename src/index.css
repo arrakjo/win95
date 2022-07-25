@@ -1,13 +1,36 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "W95A";
+  src: url("./assets/fonts/w95fa.woff2") format("woff2"),
+    url("./assets/fonts/w95fa.woff") format("woff"),
+    url("./assets/fonts/W95FA.otf") format("otf");
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body {
+  margin: 0;
+  font-family: "W95A", monospace;
+  font-size: 18px;
+}
+
+::selection {
+  color: white;
+  background: #3169c6;
+}
+
+.btn {
+  box-shadow: inset -2px -2px 0px #262626, inset 2px 2px 0px #f0f0f0,
+    inset -4px -4px 0px #7e7e7e, inset 4px 4px 0px #b1b1b1;
+}
+
+.btn:active {
+  background: #e3e3e3;
+  box-shadow: inset 2px 2px 0px #262626, inset -2px -2px 0px #f0f0f0,
+    inset 4px 4px 0px #7e7e7e, inset -4px -4px 0px #b1b1b1;
+}
+
+.clock {
+  box-shadow: inset -2px -2px 0px #f0f0f0, inset 2px 2px 0px #7e7e7e;
 }

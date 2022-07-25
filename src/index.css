@@ -35,3 +35,8 @@ body {
 .clock {
   box-shadow: inset -2px -2px 0px #f0f0f0, inset 2px 2px 0px #7e7e7e;
 }
+
+.start {
+  box-shadow: inset -2px -2px 0px #262626, inset 2px 2px 0px #f0f0f0,
+    inset -4px -4px 0px #7e7e7e, inset 4px 4px 0px #b1b1b1;
+}

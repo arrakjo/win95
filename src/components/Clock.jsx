@@ -9,7 +9,7 @@ function Clock() {
   return (
     <div className="flex justify-between items-center p-3 w-[137px] clock">
       <img src={SoundIcon} alt="Sound" className="h-6 mr-2" />
-      <p>{currentTime}</p>
+      <p className="cursor-default">{currentTime}</p>
     </div>
   );
 }

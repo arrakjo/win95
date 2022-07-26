@@ -10,7 +10,7 @@ import StartButtonAlt from "./StartButtonAlt";
 
 function Start() {
   return (
-    <div className="w-80 flex flex-col-reverse h-max start fixed bottom-[61px] left-0 bg-grey-100">
+    <div className="w-80 z-50 p-1 flex flex-col-reverse h-max start fixed bottom-[61px] left-0 bg-grey-100">
       <StartButtonAlt icon={ShutDownIcon} label="Shut Down" />
       <div className="w-[314px] h-[2px] mx-auto bg-grey-300"></div>
       <StartButton icon={RunIcon} label="Run" />

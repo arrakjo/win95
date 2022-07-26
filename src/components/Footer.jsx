@@ -20,7 +20,7 @@ function Footer() {
   return (
     <footer
       id="taskbar"
-      className="w-full z-10 px-2 py-1 flex justify-between items-center bg-grey-100 fixed bottom-0 left-0 border-t-2 border-t-grey-20"
+      className="w-full z-40 px-2 py-1 flex justify-between items-center bg-grey-100 fixed bottom-0 left-0 border-t-2 border-t-grey-20"
     >
       {start && <Start />}
 

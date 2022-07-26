@@ -40,3 +40,29 @@ body {
   box-shadow: inset -2px -2px 0px #262626, inset 2px 2px 0px #f0f0f0,
     inset -4px -4px 0px #7e7e7e, inset 4px 4px 0px #b1b1b1;
 }
+
+.window {
+  background: #c3c3c3;
+  box-shadow: inset -2px -2px 0px #262626, inset 2px 2px 0px #f0f0f0,
+    inset -4px -4px 0px #7e7e7e, inset 4px 4px 0px #b1b1b1;
+}
+
+.window__inner {
+  background: #ffffff;
+  box-shadow: inset 2px 2px 0px #262626, inset -2px -2px 0px #f0f0f0,
+    inset 4px 4px 0px #7e7e7e;
+}
+
+.window__bottom {
+  background: #c3c3c3;
+  box-shadow: inset -2px -2px 0px #f0f0f0, inset 2px 2px 0px #7e7e7e;
+}
+
+.window--max {
+  width: 100% !important;
+  height: calc(100% - 61px) !important;
+  top: 0 !important;
+  left: 0 !important;
+  right: 0 !important;
+  bottom: 63px !important;
+}

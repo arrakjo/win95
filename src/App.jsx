@@ -1,4 +1,4 @@
-import Footer from "./components/Footer";
+import Taskbar from "./components/Taskbar";
 import "./App.css";
 import Desktop from "./components/Desktop";
 
@@ -7,7 +7,7 @@ function App() {
     <div id="desktop" className="w-screen h-screen overflow-hidden bg-green">
       <Desktop />
 
-      <Footer />
+      <Taskbar />
     </div>
   );
 }

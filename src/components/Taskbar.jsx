@@ -7,7 +7,7 @@ import { useState } from "react";
 import StartIcon from "../assets/icons/Start.svg";
 import ComputerIcon from "../assets/icons/Computer.svg";
 import FolderIcon from "../assets/icons/Folder.svg";
-import NetworkIcon from "../assets/icons/Network.svg";
+import NotepadIcon from "../assets/icons/Notepad.png";
 import Start from "./Start";
 
 function Footer() {
@@ -29,7 +29,7 @@ function Footer() {
       <div className="w-full pl-2 flex items-center">
         <ProgramTab icon={ComputerIcon} label="My Computer" />
         <ProgramTab icon={FolderIcon} label="Documents" />
-        <ProgramTab icon={NetworkIcon} label="Network Neighbourhood" />
+        <ProgramTab icon={NotepadIcon} label="Notepad" />
       </div>
 
       <Clock />

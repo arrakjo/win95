@@ -3,6 +3,7 @@ import Draggable, { DraggableCore } from "react-draggable";
 import ProgramIcon from "./ProgramIcon";
 import MyComputer from "./windows/MyComputer";
 import Notepad from "./windows/Notepad";
+import Internet from "./windows/Internet";
 
 // Icons
 import ComputerIcon from "../assets/icons/Computer.svg";
@@ -10,10 +11,12 @@ import RecycleIcon from "../assets/icons/Recycle.svg";
 import NetworkIcon from "../assets/icons/Network.svg";
 import PrinterIcon from "../assets/icons/Printer.svg";
 import NotepadIcon from "../assets/icons/Notepad.png";
+import InternetIcon from "../assets/icons/Internet.png";
 
 function Desktop() {
   const [myComputer, setMyComputer] = useState(false);
   const [notepad, setNotepad] = useState(false);
+  const [internet, setInternet] = useState(false);
 
   const handleMyComputer = () => {
     setMyComputer(!myComputer);
@@ -28,6 +31,14 @@ function Desktop() {
   };
   const handleMaximizeNotepad = () => {
     const element = document.getElementById("notepad");
+    element.classList.toggle("window--max");
+  };
+
+  const handleInternet = () => {
+    setInternet(!internet);
+  };
+  const handleMaximizeInternet = () => {
+    const element = document.getElementById("internet");
     element.classList.toggle("window--max");
   };
 
@@ -55,7 +66,11 @@ function Desktop() {
         </Draggable>
         <Draggable>
           <div>
-            <ProgramIcon icon={PrinterIcon} label="Printers &amp; Devices" />
+            <ProgramIcon
+              icon={InternetIcon}
+              label="The Internet"
+              onDoubleClick={handleInternet}
+            />
           </div>
         </Draggable>
         <Draggable>
@@ -86,6 +101,17 @@ function Desktop() {
             <Notepad
               onClose={handleNotepad}
               onMaximize={handleMaximizeNotepad}
+            />
+          </div>
+        </DraggableCore>
+      )}
+
+      {internet && (
+        <DraggableCore>
+          <div>
+            <Internet
+              onClose={handleInternet}
+              onMaximize={handleMaximizeInternet}
             />
           </div>
         </DraggableCore>
